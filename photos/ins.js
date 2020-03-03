@@ -116,8 +116,10 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://github.com/SkyY2/Blog_Photos/tree/master/min_photos/' + data.link[i];
-          var src = 'https://github.com/SkyY2/Blog_Photos/tree/master/photos' + data.link[i];
+          var minSrc = 'https://yyxblog.oss-cn-hangzhou.aliyuncs.com/min_photos/' + data.link[i];
+          minSrc = encodeURI(minSrc);
+          var src = 'https://yyxblog.oss-cn-hangzhou.aliyuncs.com/photos/' + data.link[i];
+          src = encodeURI(src);
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
