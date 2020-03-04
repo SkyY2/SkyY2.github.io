@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <title>鱼子酱的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="一个小白学习之路">
+<meta property="og:type" content="website">
 <meta property="og:title" content="鱼子酱的博客">
 <meta property="og:url" content="https://celesterabbit.cn/index.html">
 <meta property="og:site_name" content="鱼子酱的博客">
+<meta property="og:description" content="一个小白学习之路">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="鱼子酱">
 <meta name="twitter:card" content="summary">
@@ -49,6 +51,8 @@
 		<hgroup>
 		  <h1 class="header-author"><a href="/">鱼子酱</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">一个小白学习之路</p>
 		
 
 		<nav class="header-menu">
@@ -106,6 +110,8 @@
 			  <h1 class="header-author js-header-author">鱼子酱</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>一个小白学习之路<i class="icon icon-quo-right"></i></p>
+			
 			
 			
 				
@@ -151,21 +157,21 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+      <a class="article-title" href="/2020/03/04/Markdown/">Markdown</a>
     </h1>
   
 
 
         
-        <a href="/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2020-02-26T03:55:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
+        <a href="/2020/03/04/Markdown/" class="archive-article-date">
+  	<time datetime="2020-03-04T01:00:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-04</time>
 </a>
 
 阅读数：<span id="busuanzi_value_page_pv"><i class="fa fa-spinner"></i></span>
@@ -180,10 +186,273 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>内容</p>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
+        <h3 id="Markdown-介绍"><a href="#Markdown-介绍" class="headerlink" title="Markdown 介绍"></a>Markdown 介绍</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过一些简单的标记语法，使得普通文本具有格式</p>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li>轻量</li>
+<li>简单</li>
+<li>通用</li>
+</ul>
+<h4 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h4><ul>
+<li>用于博客的撰写</li>
+<li>用于编写说明文档（README.md）</li>
+</ul>
+<h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><h5 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h5><p>Markdown 的表示有两种格式</p>
+<ol>
+<li><p>使用 = 和 -  表示（只能表示一级和二级标题）</p>
+<ul>
+<li><p>语法</p>
+   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一级标题</span><br><span class="line">=============</span><br><span class="line">二级标题</span><br><span class="line">-------------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果<br>   <img src="../img/=%E5%92%8C-%E8%A1%A8%E7%A4%BA%E6%A0%87%E9%A2%98.png" alt="=和-表示标题"></p>
+</li>
+</ul>
+</li>
+<li><p>使用 # 表示</p>
+<p>使用#表示标题可表示1~6级的标题，几级标题对应几个#（注意＃和文字间有空格）</p>
+<ul>
+<li><p>语法</p>
+   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br><span class="line"><span class="section">#### 四级标题</span></span><br><span class="line"><span class="section">##### 五级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>效果</p>
+<p> <img src="..%5Cimg#%E5%8F%B7%E8%A1%A8%E7%A4%BA%E6%A0%87%E9%A2%98.png" alt="#号表示标题"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h5><p>Markdown 可以使用以下字体</p>
+<ol>
+<li><p>斜体</p>
+<ul>
+<li><p>语法</p>
+   <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span></span><br><span class="line"><span class="emphasis">_斜体_</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>效果</p>
+<p> <em>斜体</em><br> <em>斜体</em></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>粗体</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">__粗体__</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>   <strong>粗体</strong><br>   <strong>粗体</strong></p>
+</li>
+</ul>
+</li>
+<li><p>斜粗体</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">***斜粗体**</span>*</span><br><span class="line"><span class="strong">___斜粗体__</span>_</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>   <strong><em>斜粗体</em></strong><br>   <strong><em>斜粗体</em></strong></p>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h5><p>分割线可以使用-或*来表示(行内不可加入除空格以外的符号)</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">***</span></span><br><span class="line"><span class="bullet">* </span><span class="emphasis">* *</span></span><br><span class="line"><span class="strong">*****</span>*</span><br><span class="line">---</span><br><span class="line"><span class="bullet">- </span>- - </span><br><span class="line">-------</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>  <img src="../img/%E5%88%86%E9%9A%94%E7%BA%BF.png" alt="分割线"></p>
+</li>
+</ul>
+<h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5><ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>  <del>删除线</del></p>
+</li>
+</ul>
+<h5 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h5><p>因为Markdown支持html格式，使用下划线可以采用html格式书写</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">u</span>&gt;</span>下划线<span class="tag">&lt;/<span class="name">u</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>  <u>下划线</u></p>
+</li>
+</ul>
+<h5 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h5><ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[^被脚注的文字]</span><br><span class="line">[<span class="symbol">^被脚注的文字</span>]: <span class="link">脚注内容</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>  这是一个[^脚注]</p>
+<p>  [^脚注]: 脚注内容</p>
+</li>
+</ul>
+<h5 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h5><ul>
+<li><p>无序列表</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>第一项</span><br><span class="line"><span class="bullet">- </span>第二项</span><br><span class="line"><span class="bullet">- </span>第三项</span><br><span class="line"></span><br><span class="line"><span class="bullet">* </span>第一项</span><br><span class="line"><span class="bullet">* </span>第二项</span><br><span class="line"><span class="bullet">* </span>第三项</span><br><span class="line"></span><br><span class="line"><span class="bullet">+ </span>第一项</span><br><span class="line"><span class="bullet">+ </span>第二项</span><br><span class="line"><span class="bullet">+ </span>第三项</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<pre><code>\-、\*、\+ 效果均为
+
+![列表](../img/列表2.png)</code></pre></li>
+</ul>
+</li>
+<li><p>有序列表</p>
+<ul>
+<li><p>语法</p>
+<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>第一项</span><br><span class="line"><span class="bullet">2. </span>第二项</span><br><span class="line"><span class="bullet">3. </span>第三项</span><br></pre></td></tr></table></figure></code></pre></li>
+<li><p>效果</p>
+<pre><code>![有序列表](../img/列表.png)</code></pre></li>
+</ul>
+</li>
+<li><p>列表嵌套</p>
+<ul>
+<li><p>语法</p>
+<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1. </span>第一项</span><br><span class="line"><span class="bullet">	- </span>第一项的第一个元素</span><br><span class="line"><span class="bullet">	- </span>第一项的第二个元素</span><br><span class="line"><span class="bullet">2. </span>第二项</span><br><span class="line"><span class="bullet">	- </span>第二项的第一个元素</span><br><span class="line"><span class="bullet">	- </span>第二项的第二个元素</span><br></pre></td></tr></table></figure></code></pre></li>
+<li><p>效果</p>
+<pre><code>![列表嵌套](../img/列表嵌套.png)</code></pre></li>
+</ul>
+</li>
+</ul>
+<h5 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h5><p>Markdown区块的使用是在段落开始时加入 &gt; 符号</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 区块1</span></span><br><span class="line"><span class="quote">&gt; 区块2</span></span><br><span class="line"><span class="quote">&gt; 区块3</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<blockquote>
+<p>区块1<br>区块2<br>区块3</p>
+</blockquote>
+</li>
+<li><p>区块的嵌套语法<br>区块的嵌套一个 <code>&gt;</code> 表示第一层 <code>&gt; &gt;</code> 两个表示第二层，以此类推</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 区块1</span></span><br><span class="line"><span class="quote">&gt; &gt; 区块1.1</span></span><br><span class="line"><span class="quote">&gt; &gt; &gt; 区块1.1.1</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>区块的嵌套效果</p>
+<blockquote>
+<p>区块1</p>
+<blockquote>
+<p>区块1.1</p>
+<blockquote>
+<p>区块1.1.1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><ul>
+<li><p>行内代码</p>
+<p>行内代码使用 `` 来包裹行内代码如</p>
+<ul>
+<li><p>语法</p>
+<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Java输出Hello, World!到控制台使用<span class="code">`System.out.println("Hello, World!");`</span></span><br></pre></td></tr></table></figure></code></pre></li>
+<li><p>效果</p>
+<pre><code>Java输出Hello, World!到控制台使用`System.out.println(&quot;Hello, World!&quot;);`</code></pre></li>
+</ul>
+</li>
+<li><p>块状代码</p>
+<p>块状式的代码可以使用<code>```</code>包裹，并指定一种语言（可不指定）</p>
+<ul>
+<li><p>语法</p>
+<pre><code><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">​<span class="code">```</span>java</span><br><span class="line">public class Main&#123;</span><br><span class="line"><span class="code">    public static void main(String[] args)&#123;</span></span><br><span class="line"><span class="code">    	System.out.println("Hello, World!");</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line">&#125;</span><br><span class="line">​</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- 效果</span><br><span class="line"></span><br><span class="line">	&#96;&#96;&#96;java</span><br><span class="line">	public class Main&#123;</span><br><span class="line">		public static void main(String[] args)&#123;</span><br><span class="line">			System.out.println(&quot;Hello, World!&quot;);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure></code></pre></li>
+</ul>
+</li>
+</ul>
+<h5 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h5><ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接名称</span>](<span class="link">链接地址</span>)</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">连接地址</span>&gt;</span></span></span><br><span class="line">这是我的[<span class="string">博客</span>][<span class="symbol">blog</span>]</span><br><span class="line">[<span class="symbol">blog</span>]: <span class="link">连接地址</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>效果</p>
+<p>  <a href="http://celesterabbit.cn">博客</a><br>  <a href="http://celesterabbit.cn">http://celesterabbit.cn</a></p>
+<p>  这是我的[博客][blog]</p>
+<p>  [blog]: <a href="http://celesterabbit.cn">http://celesterabbit.cn</a></p>
+</li>
+</ul>
+<h5 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h5><ul>
+<li><p>语法<br>  alt 属性为加载失败后显示文字<br>  可选标题的内容出现在鼠标悬停在图片上方时显示的文字</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址</span>)</span><br><span class="line">![<span class="string">alt 属性文本</span>](<span class="link">图片地址 "可选标题"</span>)</span><br></pre></td></tr></table></figure>
+<p>  也可采取网址的方式打开图片</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这是一张[<span class="string">图片</span>][<span class="symbol">img</span>]</span><br><span class="line"></span><br><span class="line">[<span class="symbol">img</span>]: <span class="link">连接</span></span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+<p>  <code>![alt 属性文本](图片地址)</code><br>  <img src="../img/%E8%8D%89%E8%8E%93.jpg" alt="加载失败"><br>  <code>![alt 属性文本](图片地址  &quot;可选标题&quot;)</code><br>  <img src="../img/%E8%8D%89%E8%8E%93.jpg" alt="加载失败" title="粗媚"><br>  这是一张[粗媚][img1]图片</p>
+<p>  [img1]: <a href="http://celesterabbit.cn/source/img/草莓.jpg">http://celesterabbit.cn/source/img/草莓.jpg</a></p>
+</li>
+</ul>
+<h5 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h5><p>Markdown使用<code>|</code>来分隔不同单元格，使用<code>-</code>来分隔表头和其他行</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| 表头 | 表头 |</span><br><span class="line">| ---- | ---- |</span><br><span class="line">| 一 | 二 |</span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>一</td>
+<td>二</td>
+</tr>
+</tbody></table>
+<p>  对单元格美化（右对齐<code>:-</code>、左对齐<code>-:</code>、居中<code>:-:</code>）</p>
+</li>
+<li><p>语法</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐 | 右对齐 | 居中对齐 |</span><br><span class="line">| :---- | ----: | :----: |</span><br><span class="line">| 一 | 二 | 三 |</span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+<table>
+<thead>
+<tr>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">一</td>
+<td align="right">二</td>
+<td align="center">三</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<p>除了Markdown自带的制作表格方法，还可以使用html的表格画法</p>
+<ul>
+<li><p>语法</p>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span></span><br><span class="line"><span class="code">      &lt;caption&gt;表格&lt;/caption&gt;</span></span><br><span class="line"><span class="code">      &lt;tr&gt;</span></span><br><span class="line"><span class="code">          &lt;th&gt;一&lt;/th&gt;</span></span><br><span class="line"><span class="code">          &lt;th&gt;二&lt;/th&gt;</span></span><br><span class="line"><span class="code">      &lt;/tr&gt;</span></span><br><span class="line"><span class="code">      &lt;tr&gt;</span></span><br><span class="line"><span class="code">          &lt;td&gt;1&lt;/td&gt;</span></span><br><span class="line"><span class="code">          &lt;td&gt;2&lt;/td&gt;</span></span><br><span class="line"><span class="code">      &lt;/tr&gt;</span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>效果</p>
+   <table>
+      <caption>表格</caption>
+      <tr>
+          <th>一</th>
+          <th>二</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+      </tr>
+  </table>   
+
+</li>
+</ul>
+<p>html表格美化可通过style添加<code>css</code>来进行</p>
+<h4 id="常见的编辑器"><a href="#常见的编辑器" class="headerlink" title="常见的编辑器"></a>常见的编辑器</h4><p><a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a></p>
+<p><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a></p>
+<p><a href="https://www.dcloud.io/" target="_blank" rel="noopener">HBuilderX</a></p>
+<h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h4><ol>
+<li><p><a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></p>
+</li>
+<li><p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin" target="_blank" rel="noopener">百度百科</a></p>
+</li>
+</ol>
 
 
       
@@ -214,7 +483,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">one</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Markdown</a>
         		</li>
       		
 		</ul>
@@ -224,108 +493,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/26/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-
-        
-        <a href="/2020/02/26/hello-world/" class="archive-article-date">
-  	<time datetime="2020-02-26T03:44:25.608Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-26</time>
-</a>
-
-阅读数：<span id="busuanzi_value_page_pv"><i class="fa fa-spinner"></i></span>
-        
-      </header>
-    
-
-
-<!-- 目录内容 -->
-   
-<!-- 目录内容结束 -->
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-
-      
-
-
-      <!-- 《添加版权声明 -->
-      
-          <!-- 《添加版权声明 -->
-<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
-
-
-<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
-
-  <div class="declare" hidden="hidden"></div>
-
-<!-- 添加版权声明》 -->
-      
-      <!-- 添加版权声明》 -->
-
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/26/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/03/04/Markdown/">展开全文 >></a>
         </p>
       
 
@@ -471,7 +639,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">one</a>
+                <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
             
             <div class="clearfix"></div>
@@ -522,7 +690,7 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">一个小白学习之路</div>
   	  	
     	</section>
     
