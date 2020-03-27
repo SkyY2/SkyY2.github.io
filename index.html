@@ -153,6 +153,109 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Android10-SD卡权限管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/27/Android10-SD%E5%8D%A1%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">Android10 SD卡权限管理</a>
+    </h1>
+  
+
+<!--阅读数：<span id="busuanzi_value_page_pv"><i class="fa fa-spinner"></i></span>-->
+        
+        <a href="/2020/03/27/Android10-SD%E5%8D%A1%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-03-27T07:44:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-27</time>
+</a>
+
+        
+      </header>
+    
+
+
+<!-- 目录内容 -->
+   
+<!-- 目录内容结束 -->
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android-10-SD卡权限获取"><a href="#Android-10-SD卡权限获取" class="headerlink" title="Android 10 SD卡权限获取"></a>Android 10 SD卡权限获取</h1><p><a href="https://blog.csdn.net/c529283955/article/details/104266083" target="_blank" rel="noopener">参考文章</a></p>
+<p>在Android10在获取文件时 <code>open failed: EACCES (Permission denied)</code>，即使加了以下权限仍然失效。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> 		    <span class="attr">android:name</span>=<span class="string">"android.permission.WRITE_EXTERNAL_STORAGE"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span>    <span class="attr">android:name</span>=<span class="string">"android.permission.READ_EXTERNAL_STORAGE"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>以 Android 10（API 级别 29）及更高版本为目标平台的应用在默认情况下被赋予了对外部存储设备的分区访问权限（即分区存储）<a href="https://developer.android.google.cn/training/data-storage/files/external-scoped?hl=zh_cn" target="_blank" rel="noopener">原文</a>，解决办法在应用清单下加入如下代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">manifest</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- This attribute is "false" by default on apps targeting</span></span><br><span class="line"><span class="comment">           Android 10 or higher. --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">application</span> <span class="attr">android:requestLegacyExternalStorage</span>=<span class="string">"true"</span> <span class="attr">...</span> &gt;</span></span><br><span class="line">        ...</span><br><span class="line">      <span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">manifest</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+      
+
+
+      <!-- 《添加版权声明 -->
+      
+          <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+      
+      <!-- 添加版权声明》 -->
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Android</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/27/Android10-SD%E5%8D%A1%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-JavaWeb学习之Servlet（二）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -580,6 +683,10 @@ MathJax.Hub.Queue(function() {
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Servlet</a>
