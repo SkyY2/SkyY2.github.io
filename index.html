@@ -153,6 +153,147 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Cookie和Session" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/15/Cookie%E5%92%8CSession/">Cookie和Session</a>
+    </h1>
+  
+
+<!--阅读数：<span id="busuanzi_value_page_pv"><i class="fa fa-spinner"></i></span>-->
+        
+        <a href="/2020/04/15/Cookie%E5%92%8CSession/" class="archive-article-date">
+  	<time datetime="2020-04-15T07:26:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
+</a>
+
+        
+      </header>
+    
+
+
+<!-- 目录内容 -->
+   
+<!-- 目录内容结束 -->
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Cookie和Session学习"><a href="#Cookie和Session学习" class="headerlink" title="Cookie和Session学习"></a>Cookie和Session学习</h1><h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h2><h3 id="什么是Cookie"><a href="#什么是Cookie" class="headerlink" title="什么是Cookie"></a>什么是Cookie</h3><ol>
+<li>Cookie是服务器通知客户端保存键值对的一种技术。</li>
+<li>客户端有了Cookie之后，每次请求都发送给服务器</li>
+<li>每个Cookie的的大小不可以超过4kb</li>
+</ol>
+<h3 id="如何创建Cookie"><a href="#如何创建Cookie" class="headerlink" title="如何创建Cookie"></a>如何创建Cookie</h3><ol>
+<li><p>创建cookie对象 (Cookie的值不能是中文)</p>
+<p> <code>Cookie cookie1 = new Cookie(&quot;key1&quot;, &quot;value1&quot;);</code></p>
+</li>
+<li><p>通知客户端保存cookie对象</p>
+<p> <code>response.addCookie(cookie);//不可省</code></p>
+</li>
+</ol>
+<h3 id="服务器获取Cookie"><a href="#服务器获取Cookie" class="headerlink" title="服务器获取Cookie"></a>服务器获取Cookie</h3><p>服务器获取cookie <code>Cookie[] cookies = request.getCookie()</code></p>
+<p>获取cookie的名称 <code>cookie.getName()</code></p>
+<p>获取cookie的值 `cookie.getValue()</p>
+<h3 id="Cookie值得修改"><a href="#Cookie值得修改" class="headerlink" title="Cookie值得修改"></a>Cookie值得修改</h3><p>方法一：</p>
+<ol>
+<li>先创建一个同名的Cookie对象</li>
+<li>在构造器同时赋于新的Cookie值</li>
+</ol>
+<p><code>Cookie newCookie = new Cookie(&quot;key1&quot;, &quot;newValue1&quot;);</code><br>3. 调用response.addCookie(cookie)；</p>
+<p><code>response.addCookie(newCookie);</code></p>
+<p>方法二：</p>
+<ol>
+<li>先查询到需要修改的Cookie</li>
+<li>调用setValue()方法赋于新的Cookie值</li>
+<li>调用response.addCookie(newCookie);通知客户端保存修改</li>
+</ol>
+<h3 id="Cookie-生命控制"><a href="#Cookie-生命控制" class="headerlink" title="Cookie 生命控制"></a>Cookie 生命控制</h3><p>Cookie的生命控制指的是如何管理Cookie什么时候销毁</p>
+<p>setMessage()内参数说明<br>正数：表示在指定的秒数后过期<br>负数：表示浏览器关闭后被删除（默认）<br>零： 表示马上删除Cookie</p>
+<h3 id="Cookie-有效路径Path的设置"><a href="#Cookie-有效路径Path的设置" class="headerlink" title="Cookie 有效路径Path的设置"></a>Cookie 有效路径Path的设置</h3><p>Cookie的Path属性可以有效的过滤哪些Cookie可以发送给服务器，哪些不发送。<br>path属性是通过请求的地址来进行有效的过滤，通过setPath(path)设置</p>
+<p>如：<br>CookieA path=/工程路径<br>CookieB path= /工程路径/abc</p>
+<p>请求地址：<code>http://ip:port/工程路径/a.html</code><br>CookieA发送，Cookie不发送</p>
+<p><code>http://ip:port/工程路径/abc/a.html</code><br>CookieA发送，Cookie发送</p>
+<h2 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h2><h3 id="什么是session会话"><a href="#什么是session会话" class="headerlink" title="什么是session会话"></a>什么是session会话</h3><ol>
+<li>session就是一个接口</li>
+<li>Session就是会话，是用来维护客户端和服务器之间关联的一种技术。</li>
+<li>每个客户端都有自己的一个session会话。</li>
+<li>Session会话中，经常用于保存用户登录之后的信息（保存在服务器端Cookie保存在客户端） </li>
+</ol>
+<h3 id="Session的创建和获取"><a href="#Session的创建和获取" class="headerlink" title="Session的创建和获取"></a>Session的创建和获取</h3><p>request.getSession()： 第一次调用是创建，之后调用是获取之前创建好的session。<br>isNew()：判断session是否是新创建的，true表示刚创建的。<br>getId()：得到Session的会话Id值。（每个会话都有一个唯一的ID值）</p>
+<h3 id="Session-生命周期控制"><a href="#Session-生命周期控制" class="headerlink" title="Session 生命周期控制"></a>Session 生命周期控制</h3><p>setMaxInactiveInterval(); 设置Session的超时时间，超过指定时长就会被销毁。以秒为单位<br>getMaxInactiveInterval(); 获取Session的超时时间<br>Session的默认超时时长1800s<br>invalidate() 让session立刻销毁</p>
+
+
+      
+
+
+      <!-- 《添加版权声明 -->
+      
+          <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+      
+      <!-- 添加版权声明》 -->
+
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">-JavaWeb -Cookie -Session</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/15/Cookie%E5%92%8CSession/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Android10-SD卡权限管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -685,7 +826,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Android</a>
+                <a href="javascript:void(0)" class="js-tag color1">-JavaWeb -Cookie -Session</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -694,6 +835,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">JavaWeb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Android</a>
               </li>
              
               <li class="article-tag-list-item">
